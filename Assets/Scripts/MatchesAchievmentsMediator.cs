@@ -29,12 +29,10 @@ public class MatchesAchievmentsMediator : MonoBehaviour
         for (int i = 0; i < _showMatchesPanelButton.Length; i++)
         {
             _showMatchesPanelButton[i].onClick.AddListener(ShowMAtchesPanel);
-            //_showMatchesPanelButtonImages.Add(_showMatchesPanelButton[i].gameObject.GetComponent<Image>());
         }
         for (int i = 0; i < _showAchievmentsPanelButton.Length; i++)
         {
             _showAchievmentsPanelButton[i].onClick.AddListener(ShowAchievmentPanel);
-            //_showAchievmentsPanelButtonImages.Add(_showAchievmentsPanelButton[i].gameObject.GetComponent<Image>());
         }
     }
 

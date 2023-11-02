@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MatchesAchievmentsAtlas
+  m_Name: UIKitAtlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -20,19 +20,7 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings:
-    - serializedVersion: 3
-      m_BuildTarget: Android
-      m_MaxTextureSize: 2048
-      m_ResizeAlgorithm: 0
-      m_TextureFormat: 47
-      m_TextureCompression: 1
-      m_CompressionQuality: 50
-      m_CrunchedCompression: 0
-      m_AllowsAlphaSplitting: 0
-      m_Overridden: 1
-      m_AndroidETC2FallbackOverride: 0
-      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    platformSettings: []
     packingSettings:
       serializedVersion: 2
       padding: 8
@@ -43,43 +31,46 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: 6e9b68f9ec2bf144abf9167c06d0f898, type: 3}
     - {fileID: 2800000, guid: a4e9dca7c69102343873ff32232e38e0, type: 3}
-    - {fileID: 2800000, guid: 26d7765df577d0049923fe06b2c11539, type: 3}
-    - {fileID: 2800000, guid: 678ae5744ae91a643bda347887eeb8ee, type: 3}
-    - {fileID: 2800000, guid: b765fa243f6a69340ac5c5900c8b307a, type: 3}
-    - {fileID: 2800000, guid: 8e5298e9b63b8144f8091667ede0138e, type: 3}
-    - {fileID: 2800000, guid: c59f55a3b5577724ea5d71a206757617, type: 3}
-    - {fileID: 2800000, guid: 8bdc36fbf1bf8034a896a554eb2f42f7, type: 3}
     - {fileID: 2800000, guid: 4ee2ab00cdd74fb4abba7fcf35978128, type: 3}
     - {fileID: 2800000, guid: 30474385b6a77fd4284971188f11a07c, type: 3}
-    totalSpriteSurfaceArea: 919506
+    - {fileID: 2800000, guid: 678ae5744ae91a643bda347887eeb8ee, type: 3}
+    - {fileID: 2800000, guid: c990fc6441fb1fc40b38f3199bd257c0, type: 3}
+    - {fileID: 2800000, guid: 9ecbe63c5e90f2549bc897ed8ae3ba28, type: 3}
+    - {fileID: 2800000, guid: b765fa243f6a69340ac5c5900c8b307a, type: 3}
+    - {fileID: 2800000, guid: 7c6df82d2b4ae4546bb9709a211821a8, type: 3}
+    - {fileID: 2800000, guid: d913a6c830bf6ad428ed0b71a92eeb13, type: 3}
+    - {fileID: 2800000, guid: e77e0577da80d4b449bdd5189cf06a55, type: 3}
+    - {fileID: 2800000, guid: 8bdc36fbf1bf8034a896a554eb2f42f7, type: 3}
+    totalSpriteSurfaceArea: 101192
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 4ee2ab00cdd74fb4abba7fcf35978128, type: 3}
-  - {fileID: 21300000, guid: c59f55a3b5577724ea5d71a206757617, type: 3}
   - {fileID: 21300000, guid: b765fa243f6a69340ac5c5900c8b307a, type: 3}
+  - {fileID: 21300000, guid: c990fc6441fb1fc40b38f3199bd257c0, type: 3}
   - {fileID: 21300000, guid: 678ae5744ae91a643bda347887eeb8ee, type: 3}
   - {fileID: 21300000, guid: 30474385b6a77fd4284971188f11a07c, type: 3}
+  - {fileID: 21300000, guid: e77e0577da80d4b449bdd5189cf06a55, type: 3}
   - {fileID: 21300000, guid: a4e9dca7c69102343873ff32232e38e0, type: 3}
-  - {fileID: 21300000, guid: 8e5298e9b63b8144f8091667ede0138e, type: 3}
-  - {fileID: 21300000, guid: 6e9b68f9ec2bf144abf9167c06d0f898, type: 3}
+  - {fileID: 21300000, guid: d913a6c830bf6ad428ed0b71a92eeb13, type: 3}
   - {fileID: 21300000, guid: 8bdc36fbf1bf8034a896a554eb2f42f7, type: 3}
-  - {fileID: 21300000, guid: 26d7765df577d0049923fe06b2c11539, type: 3}
+  - {fileID: 21300000, guid: 9ecbe63c5e90f2549bc897ed8ae3ba28, type: 3}
+  - {fileID: 21300000, guid: 7c6df82d2b4ae4546bb9709a211821a8, type: 3}
   m_PackedSpriteNamesToIndex:
   - ScrollHandle
-  - matchStatsBg
   - buttonGrey
+  - AvatarCircle
   - AchievmentIcon3
   - scrollSlider
+  - progressBar
   - AchievmentIcon1
-  - MatchesScrollBg
-  - AchievmentFrame
+  - progressBack
   - ScrollGradient
-  - AchievmentIcon2
+  - AvatarFrame
+  - PlayerAvatar
   m_RenderDataMap: {}
-  m_Tag: MatchesAchievmentsAtlas
+  m_Tag: UIKitAtlas
   m_IsVariant: 0

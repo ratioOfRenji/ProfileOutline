@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TopBarAtlas
+  m_Name: PanelsAtlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -38,45 +38,39 @@ SpriteAtlas:
       padding: 8
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 0
+      enableRotation: 1
       enableTightPacking: 1
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: c990fc6441fb1fc40b38f3199bd257c0, type: 3}
-    - {fileID: 2800000, guid: 7c6df82d2b4ae4546bb9709a211821a8, type: 3}
     - {fileID: 2800000, guid: 489291f7120b2534b8c3bcfc5bce57dc, type: 3}
-    - {fileID: 2800000, guid: d913a6c830bf6ad428ed0b71a92eeb13, type: 3}
-    - {fileID: 2800000, guid: e77e0577da80d4b449bdd5189cf06a55, type: 3}
-    - {fileID: 2800000, guid: 9ecbe63c5e90f2549bc897ed8ae3ba28, type: 3}
+    - {fileID: 2800000, guid: c59f55a3b5577724ea5d71a206757617, type: 3}
     - {fileID: 2800000, guid: 3cde0bf43ba941e498ac1c087b2d87e5, type: 3}
-    - {fileID: 2800000, guid: 1763ce3b7bc07e64c973b5348a102265, type: 3}
+    - {fileID: 2800000, guid: 8e5298e9b63b8144f8091667ede0138e, type: 3}
+    - {fileID: 2800000, guid: c61e77c9d9b54324cad0bd3278ca9fdb, type: 3}
+    - {fileID: 2800000, guid: 9a2217b0ab822ea42b7193f3f45a04f2, type: 3}
     - {fileID: 2800000, guid: b2c8f14900095e843a5f124de88ee6ab, type: 3}
-    totalSpriteSurfaceArea: 1955103
+    totalSpriteSurfaceArea: 2742185
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: c990fc6441fb1fc40b38f3199bd257c0, type: 3}
+  - {fileID: 21300000, guid: 9a2217b0ab822ea42b7193f3f45a04f2, type: 3}
+  - {fileID: 21300000, guid: c59f55a3b5577724ea5d71a206757617, type: 3}
   - {fileID: 21300000, guid: 3cde0bf43ba941e498ac1c087b2d87e5, type: 3}
-  - {fileID: 21300000, guid: e77e0577da80d4b449bdd5189cf06a55, type: 3}
   - {fileID: 21300000, guid: 489291f7120b2534b8c3bcfc5bce57dc, type: 3}
-  - {fileID: 21300000, guid: d913a6c830bf6ad428ed0b71a92eeb13, type: 3}
   - {fileID: 21300000, guid: b2c8f14900095e843a5f124de88ee6ab, type: 3}
-  - {fileID: 21300000, guid: 1763ce3b7bc07e64c973b5348a102265, type: 3}
-  - {fileID: 21300000, guid: 9ecbe63c5e90f2549bc897ed8ae3ba28, type: 3}
-  - {fileID: 21300000, guid: 7c6df82d2b4ae4546bb9709a211821a8, type: 3}
+  - {fileID: 21300000, guid: c61e77c9d9b54324cad0bd3278ca9fdb, type: 3}
+  - {fileID: 21300000, guid: 8e5298e9b63b8144f8091667ede0138e, type: 3}
   m_PackedSpriteNamesToIndex:
-  - AvatarCircle
+  - AchievmentIcon2 1
+  - matchStatsBg
   - bg
-  - progressBar
   - topBar
-  - progressBack
   - StatIcon
-  - ShieldFrame
-  - AvatarFrame
-  - PlayerAvatar
+  - ShieldFrame 1
+  - MatchesScrollBg
   m_RenderDataMap: {}
-  m_Tag: TopBarAtlas
+  m_Tag: PanelsAtlas
   m_IsVariant: 0
