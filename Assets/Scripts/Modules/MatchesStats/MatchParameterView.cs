@@ -14,9 +14,9 @@ public class MatchParameterView : MonoBehaviour
     private TMP_Text _score;
     public void FillView(MatchParameter matchParameter)
     {
-        _header.text = matchParameter.Header;
-        _subHeader.text = matchParameter.SubHeader;
-        _score.text = matchParameter.Score.ToString()+" PT.";
+        _header.text = matchParameter.Header.ToUpper();
+        _subHeader.text = matchParameter.SubHeader.ToUpper();
+        _score.text = matchParameter.Score.ToString()+" PT.".ToUpper();
 
     }
 }

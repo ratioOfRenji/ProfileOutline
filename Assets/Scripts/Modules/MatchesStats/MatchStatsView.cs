@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class MatchStatsView : MonoBehaviour
 {
     [SerializeField]
@@ -13,6 +14,6 @@ public class MatchStatsView : MonoBehaviour
     private Image _icon;
     public void FillView(MatchData matchData)
     {
-        _matchType.text = matchData.MatchType.ToString();
+        _matchType.text = matchData.MatchType.ToString().ToUpper();
     }
 }

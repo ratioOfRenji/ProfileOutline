@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 826302458}
   - component: {fileID: 3445429066038144509}
   m_Layer: 5
-  m_Name: MatchInfo
+  m_Name: MatchParameter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,10 +122,10 @@ RectTransform:
   m_Father: {fileID: 6574311650307908755}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0026487922, y: 0.046000004}
-  m_AnchorMax: {x: 0.08835121, y: 0.31861034}
-  m_AnchoredPosition: {x: -0.43115234, y: 0.4258995}
-  m_SizeDelta: {x: -0.8624, y: 0.8518}
+  m_AnchorMin: {x: 0.0026487922, y: 0.026}
+  m_AnchorMax: {x: 0.8236488, y: 0.31861034}
+  m_AnchoredPosition: {x: 0.30389404, y: 1.4258995}
+  m_SizeDelta: {x: 0.6069946, y: -1.1482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6574311650343234023
 CanvasRenderer:
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.3
+  m_fontSize: 17.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 6
-  m_wordSpacing: -25.23
+  m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -256,10 +256,10 @@ RectTransform:
   m_Father: {fileID: 6574311650307908755}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.34445015}
-  m_AnchorMax: {x: 0.20135123, y: 0.92222506}
-  m_AnchoredPosition: {x: 2.4293213, y: 1.0532}
-  m_SizeDelta: {x: 1.2855, y: -8.2443}
+  m_AnchorMin: {x: 0, y: 0.39612976}
+  m_AnchorMax: {x: 0.5095854, y: 0.89630014}
+  m_AnchoredPosition: {x: 1.2531738, y: 0.053199768}
+  m_SizeDelta: {x: -1.066803, y: -2.2443}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6574311650866491356
 CanvasRenderer:
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.45
+  m_fontSize: 30.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.75
+  m_fontSize: 36.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

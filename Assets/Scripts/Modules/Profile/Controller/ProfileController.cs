@@ -20,7 +20,7 @@ namespace Modules.Profile.Controller
         public void Initialize()
         {
             AccountData data = m_model.GetAccount();
-            m_view.Initialize(data.Matches);
+            m_view.Initialize(data.Matches, m_model.MaxMatchParameters);
         }
 
         public void Dispose()

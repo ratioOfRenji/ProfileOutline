@@ -135,5 +135,7 @@ namespace Modules.Profile.Model
 				}
 			};
 		}
+
+		public int MaxMatchParameters =10;
 	}
 }

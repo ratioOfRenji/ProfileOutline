@@ -8,9 +8,9 @@ namespace Modules.Profile.View
 		[SerializeField]
 		private MatchesStatsView _matchesStatsView;
 
-        public void Initialize(MatchData[] matches)
+        public void Initialize(MatchData[] matches, int maxMatchesParameters)
         {
-            _matchesStatsView.ShowLastMatches(matches);
+            _matchesStatsView.Initialize(maxMatchesParameters, matches);
         }
     }
 }
