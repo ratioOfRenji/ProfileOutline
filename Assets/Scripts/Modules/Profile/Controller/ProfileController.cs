@@ -23,6 +23,7 @@ namespace Modules.Profile.Controller
             m_view.Initialize(data.Matches, m_model.MaxMatchParameters);
         }
 
+        //не вижу что здесь нужно что-то диспозить, из неуправляемых ресурсов есть только handle у адрессеблов, его я освобождаю в том же методе где вызываю
         public void Dispose()
         {
            

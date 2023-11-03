@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class AchievmentView : MonoBehaviour
+namespace Modules.Profile.View.Achievments
 {
-    [SerializeField]
-    private GameObject _content;
-
-    public void SetVisibility(bool _b)
+    public class AchievmentView : MonoBehaviour
     {
-        _content.SetActive(_b);
-    }
+        [SerializeField]
+        private GameObject m_content;
 
+        public void SetVisibility(bool _b)
+        {
+            m_content.SetActive(_b);
+        }
+
+    }
 }

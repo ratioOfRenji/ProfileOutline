@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e30d124dbc17f44ca4cc3f59e7445d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _matchType: {fileID: 4342405303164976443}
-  _icon: {fileID: 3969554342493446065}
+  m_matchType: {fileID: 4342405303164976443}
+  m_icon: {fileID: 3969554342493446065}
 --- !u!114 &5553874738506173287
 MonoBehaviour:
   m_ObjectHideFlags: 0

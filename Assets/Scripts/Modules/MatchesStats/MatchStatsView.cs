@@ -1,33 +1,38 @@
 using Data.Matching;
 using TMPro;
-using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AddressableAssets;
+using Cysharp.Threading.Tasks;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-[RequireComponent(typeof(Button))]
-public class MatchStatsView : MonoBehaviour
+namespace Modules.Profile.View.Matches
 {
-    [SerializeField]
-    private TMP_Text _matchType;
-    [SerializeField]
-    private Image _icon;
-    public async void FillView(MatchData matchData)
+    [RequireComponent(typeof(Button))]
+    public class MatchStatsView : MonoBehaviour
     {
-        _matchType.text = matchData.MatchType.ToString().ToUpper();
-        AsyncOperationHandle<Sprite> handle = Addressables.LoadAssetAsync<Sprite>(matchData.Icon);
-        await handle.Task;
+        [SerializeField]
+        private TMP_Text m_matchType;
+        [SerializeField]
+        private Image m_icon;
 
-        if (handle.Status == AsyncOperationStatus.Succeeded)
+        public async UniTask FillView(MatchData matchData)
         {
-            _icon.sprite = handle.Result;
-        }
-        else
-        {
-            Debug.LogError("Failed to load sprite: " + matchData.Icon);
-        }
+            m_matchType.text = matchData.MatchType.ToString().ToUpper();
 
-        Addressables.Release(handle);
+            AsyncOperationHandle<Sprite> handle = Addressables.LoadAssetAsync<Sprite>(matchData.Icon);
+            await handle.ToUniTask();
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                m_icon.sprite = handle.Result;
+            }
+            else
+            {
+                Debug.LogError("Failed to load sprite: " + matchData.Icon);
+            }
+
+            Addressables.Release(handle);
+        }
     }
 }

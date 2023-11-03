@@ -2742,7 +2742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969554343012932248, guid: 55e9ae183507e6c45a150e038be06b37, type: 3}
       propertyPath: m_Name
-      value: TopBattlePrefab (2)
+      value: TopBattlePrefab 3
       objectReference: {fileID: 0}
     - target: {fileID: 3969554343012932249, guid: 55e9ae183507e6c45a150e038be06b37, type: 3}
       propertyPath: m_Pivot.x
@@ -3124,7 +3124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5001985}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5.000023}
+  m_AnchoredPosition: {x: 0, y: -5.0000305}
   m_SizeDelta: {x: -0.0000066757, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &840330791
@@ -3909,15 +3909,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f459c035d73551e439db3e70c07dd9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _matchesStatsView: {fileID: 1628373939}
-  _achievmentView: {fileID: 1720629650}
-  _showAchievmentsPanelButton:
+  m_showAchievmentsPanelButton:
   - {fileID: 1387138323}
-  _showMatchesPanelButton:
+  m_showMatchesPanelButton:
   - {fileID: 288830378}
-  _showAchievmentsPanelButtonImages:
+  m_showAchievmentsPanelButtonImages:
   - {fileID: 1387138324}
-  _showMatchesPanelButtonImages:
+  m_showMatchesPanelButtonImages:
   - {fileID: 288830379}
 --- !u!1 &1101223379
 GameObject:
@@ -4546,7 +4544,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3969554343012932248, guid: 55e9ae183507e6c45a150e038be06b37, type: 3}
       propertyPath: m_Name
-      value: TopBattlePrefab (1)
+      value: TopBattlePrefab 1
       objectReference: {fileID: 0}
     - target: {fileID: 3969554343012932249, guid: 55e9ae183507e6c45a150e038be06b37, type: 3}
       propertyPath: m_Pivot.x
@@ -4663,7 +4661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b536a68824429a837cf09066bb273f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _matchesStatsView: {fileID: 1628373939}
 --- !u!224 &1313766670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5856,13 +5853,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d35e6b940917f4eba35bc6555456de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _content: {fileID: 449784468}
-  _recentMatches:
+  m_content: {fileID: 449784468}
+  m_recentMatches:
   - {fileID: 1892969328}
   - {fileID: 2104467115}
   - {fileID: 1406420667}
-  _matchParameterPrefab: {fileID: 6574311650307908764, guid: b0b56107f9301a0419dd1311eb8cb164, type: 3}
-  _contentTransform: {fileID: 983051781}
+  m_matchParameterPrefab: {fileID: 6574311650307908764, guid: b0b56107f9301a0419dd1311eb8cb164, type: 3}
+  m_contentTransform: {fileID: 983051781}
 --- !u!114 &1628373940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6171,7 +6168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72bf2d308f507314599c1bfb61abd125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _content: {fileID: 850740908}
+  m_content: {fileID: 850740908}
 --- !u!114 &1720629651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6884,6 +6881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_profileView: {fileID: 1313766669}
+  m_matchesStatsView: {fileID: 1628373939}
+  m_achievmentView: {fileID: 1720629650}
 --- !u!114 &2051609273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7380,7 +7379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969554343012932248, guid: 55e9ae183507e6c45a150e038be06b37, type: 3}
       propertyPath: m_Name
-      value: TopBattlePrefab
+      value: TopBattlePrefab 2
       objectReference: {fileID: 0}
     - target: {fileID: 3969554343012932249, guid: 55e9ae183507e6c45a150e038be06b37, type: 3}
       propertyPath: m_Pivot.x

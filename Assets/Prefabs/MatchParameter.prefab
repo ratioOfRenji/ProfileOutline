@@ -87,9 +87,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d111e073b5f4ad43b0619d7b3e842e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _header: {fileID: 6574311650866491357}
-  _subHeader: {fileID: 6574311650343234016}
-  _score: {fileID: 6574311650988049571}
+  m_header: {fileID: 6574311650866491357}
+  m_subHeader: {fileID: 6574311650343234016}
+  m_score: {fileID: 6574311650988049571}
 --- !u!1 &6574311650343234018
 GameObject:
   m_ObjectHideFlags: 0

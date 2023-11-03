@@ -3,85 +3,87 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Cysharp.Threading.Tasks;
 
-public class MatchesStatsView : MonoBehaviour
+namespace Modules.Profile.View.Matches
 {
-
-    [SerializeField]
-    private GameObject _content;
-
-    [SerializeField]
-    private MatchStatsView[] _recentMatches;
-
-    [SerializeField]
-    private GameObject _matchParameterPrefab;
-
-    [SerializeField]
-    private Transform _contentTransform;
-
-    
-    private List<Button> _lastMatchesButtons = new List<Button>();
-
-    private List<MatchParameterView> _matchParameters = new List<MatchParameterView>();
-
-
-    private void OnDestroy()
+    public class MatchesStatsView : MonoBehaviour
     {
-        foreach(Button b in _lastMatchesButtons)
+
+        [SerializeField]
+        private GameObject m_content;
+
+        [SerializeField]
+        private MatchStatsView[] m_recentMatches;
+
+        [SerializeField]
+        private GameObject m_matchParameterPrefab;
+
+        [SerializeField]
+        private Transform m_contentTransform;
+
+
+        private List<Button> m_lastMatchesButtons = new List<Button>();
+
+        private List<MatchParameterView> m_matchParameters = new List<MatchParameterView>();
+
+
+        private void OnDestroy()
         {
-            b.onClick.RemoveAllListeners();
-        }
-    }
-    public void SetVisibility(bool _b)
-    {
-        _content.SetActive(_b);
-    }
-
-    public void Initialize(int maxMatchesParameters, MatchData[] matches)
-    {
-        for (int i = 0; i < maxMatchesParameters; i++)
-        {
-            var newParameter = Instantiate(_matchParameterPrefab, _contentTransform);
-            _matchParameters.Add(newParameter.GetComponent<MatchParameterView>());
-            newParameter.SetActive(false);
-        }
-
-        ShowLastMatches(matches);
-    }
-    private void ShowLastMatches(MatchData[] matches)
-    {
-        
-        ShowRecentMatches(matches);
-        ShowMatchParameters(matches[0]);
-    }
-
-    private void ShowRecentMatches(MatchData[] matches)
-    {
-        _lastMatchesButtons.Clear();
-
-        for (int i = 0; i < _recentMatches.Length; i++)
-        {
-            _recentMatches[i].FillView(matches[i]);
-            Button b = _recentMatches[i].GetComponent<Button>();
-            int index = i;
-            b.onClick.AddListener(() => { ShowMatchParameters(matches[index]); });
-            _lastMatchesButtons.Add(_recentMatches[i].GetComponent<Button>());
-        }
-    }
-    private void ShowMatchParameters(MatchData match)
-    {
-        int parametersCount = match.Parameters.Length;
-        for (int i = 0; i < _matchParameters.Count; i++)
-        {
-            if (i < parametersCount)
+            foreach (Button b in m_lastMatchesButtons)
             {
-                _matchParameters[i].gameObject.SetActive(true);
-                _matchParameters[i].FillView(match.Parameters[i]);
+                b.onClick.RemoveAllListeners();
             }
-            else
+        }
+        public void SetVisibility(bool _b)
+        {
+            m_content.SetActive(_b);
+        }
+
+        public void Initialize(int maxMatchesParameters, MatchData[] matches)
+        {
+            for (int i = 0; i < maxMatchesParameters; i++)
             {
-                _matchParameters[i].gameObject.SetActive(false);
+                var newParameter = Instantiate(m_matchParameterPrefab, m_contentTransform);
+                m_matchParameters.Add(newParameter.GetComponent<MatchParameterView>());
+                newParameter.SetActive(false);
+            }
+
+            ShowLastMatches(matches);
+        }
+        private void ShowLastMatches(MatchData[] matches)
+        {
+
+            ShowRecentMatches(matches);
+            ShowMatchParameters(matches[0]);
+        }
+
+        private void ShowRecentMatches(MatchData[] matches)
+        {
+            m_lastMatchesButtons.Clear();
+
+            for (int i = 0; i < m_recentMatches.Length; i++)
+            {
+                m_recentMatches[i].FillView(matches[i]);
+                Button b = m_recentMatches[i].GetComponent<Button>();
+                int index = i;
+                b.onClick.AddListener(() => { ShowMatchParameters(matches[index]); });
+                m_lastMatchesButtons.Add(m_recentMatches[i].GetComponent<Button>());
+            }
+        }
+        private void ShowMatchParameters(MatchData match)
+        {
+            int parametersCount = match.Parameters.Length;
+            for (int i = 0; i < m_matchParameters.Count; i++)
+            {
+                if (i < parametersCount)
+                {
+                    m_matchParameters[i].gameObject.SetActive(true);
+                    m_matchParameters[i].FillView(match.Parameters[i]);
+                }
+                else
+                {
+                    m_matchParameters[i].gameObject.SetActive(false);
+                }
             }
         }
     }

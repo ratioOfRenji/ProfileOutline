@@ -1,3 +1,5 @@
+using Modules.Profile.View.Achievments;
+using Modules.Profile.View.Matches;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,56 +9,56 @@ using Zenject;
 public class MatchesAchievmentsMediator : MonoBehaviour
 {
 
-    [SerializeField]
-    private MatchesStatsView _matchesStatsView;
+    [Inject]
+    private MatchesStatsView m_matchesStatsView;
+
+    [Inject]
+    private AchievmentView m_achievmentView;
 
     [SerializeField]
-    private AchievmentView _achievmentView;
+    private Button[] m_showAchievmentsPanelButton;
 
     [SerializeField]
-    private Button[] _showAchievmentsPanelButton;
+    private Button[] m_showMatchesPanelButton;
 
     [SerializeField]
-    private Button[] _showMatchesPanelButton;
-
+    private Image[] m_showAchievmentsPanelButtonImages;
     [SerializeField]
-    private Image[] _showAchievmentsPanelButtonImages;
-    [SerializeField]
-    private Image[] _showMatchesPanelButtonImages;
+    private Image[] m_showMatchesPanelButtonImages;
     private void Start()
     {
 
-        for (int i = 0; i < _showMatchesPanelButton.Length; i++)
+        for (int i = 0; i < m_showMatchesPanelButton.Length; i++)
         {
-            _showMatchesPanelButton[i].onClick.AddListener(ShowMAtchesPanel);
+            m_showMatchesPanelButton[i].onClick.AddListener(ShowMAtchesPanel);
         }
-        for (int i = 0; i < _showAchievmentsPanelButton.Length; i++)
+        for (int i = 0; i < m_showAchievmentsPanelButton.Length; i++)
         {
-            _showAchievmentsPanelButton[i].onClick.AddListener(ShowAchievmentPanel);
+            m_showAchievmentsPanelButton[i].onClick.AddListener(ShowAchievmentPanel);
         }
     }
 
     private void OnDestroy()
     {
-        for (int i = 0; i < _showMatchesPanelButton.Length; i++)
+        for (int i = 0; i < m_showMatchesPanelButton.Length; i++)
         {
-            _showMatchesPanelButton[i].onClick.RemoveListener(ShowMAtchesPanel);
+            m_showMatchesPanelButton[i].onClick.RemoveListener(ShowMAtchesPanel);
         }
-        for (int i = 0; i < _showMatchesPanelButton.Length; i++)
+        for (int i = 0; i < m_showMatchesPanelButton.Length; i++)
         {
-            _showAchievmentsPanelButton[i].onClick.RemoveListener(ShowAchievmentPanel);
+            m_showAchievmentsPanelButton[i].onClick.RemoveListener(ShowAchievmentPanel);
         }
 
     }
     private void ShowMAtchesPanel()
     {
-        _achievmentView.SetVisibility(false);
-        _matchesStatsView.SetVisibility(true);
-        foreach(Image img in _showMatchesPanelButtonImages)
+        m_achievmentView.SetVisibility(false);
+        m_matchesStatsView.SetVisibility(true);
+        foreach(Image img in m_showMatchesPanelButtonImages)
         {
             img.enabled = true;
         }
-        foreach (Image img in _showAchievmentsPanelButtonImages)
+        foreach (Image img in m_showAchievmentsPanelButtonImages)
         {
             img.enabled = false;
         }
@@ -64,13 +66,13 @@ public class MatchesAchievmentsMediator : MonoBehaviour
 
     private void ShowAchievmentPanel()
     {
-        _achievmentView.SetVisibility(true);
-        _matchesStatsView.SetVisibility(false);
-        foreach (Image img in _showMatchesPanelButtonImages)
+        m_achievmentView.SetVisibility(true);
+        m_matchesStatsView.SetVisibility(false);
+        foreach (Image img in m_showMatchesPanelButtonImages)
         {
             img.enabled = false;
         }
-        foreach (Image img in _showAchievmentsPanelButtonImages)
+        foreach (Image img in m_showAchievmentsPanelButtonImages)
         {
             img.enabled = true;
         }

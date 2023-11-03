@@ -1,22 +1,23 @@
 using Data.Matching;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class MatchParameterView : MonoBehaviour
+namespace Modules.Profile.View.Matches
 {
-    [SerializeField]
-    private TMP_Text _header;
-    [SerializeField]
-    private TMP_Text _subHeader;
-    [SerializeField]
-    private TMP_Text _score;
-    public void FillView(MatchParameter matchParameter)
+    public class MatchParameterView : MonoBehaviour
     {
-        _header.text = matchParameter.Header.ToUpper();
-        _subHeader.text = matchParameter.SubHeader.ToUpper();
-        _score.text = matchParameter.Score.ToString()+" PT.".ToUpper();
+        [SerializeField]
+        private TMP_Text m_header;
+        [SerializeField]
+        private TMP_Text m_subHeader;
+        [SerializeField]
+        private TMP_Text m_score;
+        public void FillView(MatchParameter matchParameter)
+        {
+            m_header.text = matchParameter.Header.ToUpper();
+            m_subHeader.text = matchParameter.SubHeader.ToUpper();
+            m_score.text = matchParameter.Score.ToString() + " PT.".ToUpper();
 
+        }
     }
 }
