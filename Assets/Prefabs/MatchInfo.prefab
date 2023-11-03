@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6574311650307908755}
   - component: {fileID: 6574311650307908754}
   - component: {fileID: 826302458}
+  - component: {fileID: 3445429066038144509}
   m_Layer: 5
   m_Name: MatchInfo
   m_TagString: Untagged
@@ -74,6 +75,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 1
   m_AspectRatio: 14.681203
+--- !u!114 &3445429066038144509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574311650307908764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d111e073b5f4ad43b0619d7b3e842e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _header: {fileID: 6574311650866491357}
+  _subHeader: {fileID: 6574311650343234016}
+  _score: {fileID: 6574311650988049571}
 --- !u!1 &6574311650343234018
 GameObject:
   m_ObjectHideFlags: 0

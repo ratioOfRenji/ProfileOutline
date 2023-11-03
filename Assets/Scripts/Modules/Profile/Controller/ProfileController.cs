@@ -1,4 +1,5 @@
 using System;
+using Data;
 using Modules.Profile.Model;
 using Modules.Profile.View;
 using Zenject;
@@ -18,7 +19,8 @@ namespace Modules.Profile.Controller
 
         public void Initialize()
         {
-            
+            AccountData data = m_model.GetAccount();
+            m_view.Initialize(data.Matches);
         }
 
         public void Dispose()
