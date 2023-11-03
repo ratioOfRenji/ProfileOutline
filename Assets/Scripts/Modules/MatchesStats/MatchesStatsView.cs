@@ -49,7 +49,14 @@ public class MatchesStatsView : MonoBehaviour
 
         ShowLastMatches(matches);
     }
-    public void ShowLastMatches(MatchData[] matches)
+    private void ShowLastMatches(MatchData[] matches)
+    {
+        
+        ShowRecentMatches(matches);
+        ShowMatchParameters(matches[0]);
+    }
+
+    private void ShowRecentMatches(MatchData[] matches)
     {
         _lastMatchesButtons.Clear();
 
@@ -61,10 +68,8 @@ public class MatchesStatsView : MonoBehaviour
             b.onClick.AddListener(() => { ShowMatchParameters(matches[index]); });
             _lastMatchesButtons.Add(_recentMatches[i].GetComponent<Button>());
         }
-        ShowMatchParameters(matches[0]);
     }
-
-    public void ShowMatchParameters(MatchData match)
+    private void ShowMatchParameters(MatchData match)
     {
         int parametersCount = match.Parameters.Length;
         for (int i = 0; i < _matchParameters.Count; i++)
