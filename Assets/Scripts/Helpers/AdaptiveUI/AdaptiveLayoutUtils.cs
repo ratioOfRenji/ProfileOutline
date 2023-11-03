@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core.Ui.Helpers.AdaptiveLayout
+namespace Ui.Helpers.AdaptiveLayout
 {
     // LayoutGroup не умеют менять spacing, padding, cellSize при изменении разрешения, мы их научим :)
     public class AdaptiveLayoutUtils

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Core.Ui.Helpers.AdaptiveLayout
+namespace Ui.Helpers.AdaptiveLayout
 {
     [RequireComponent(typeof(VerticalLayoutGroup))]
     public class VerticalLayoutResolutionScaler : MonoBehaviour
